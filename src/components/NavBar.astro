@@ -1,0 +1,70 @@
+<div class="navbar">
+  <img src="../../src/icons/askexpert.svg" alt="" />
+  <p class="ask_experts">AskExperts</p>
+  <ul>
+    <li><a href="news.asp">About</a></li>
+    <li><a href="contact.asp">Case Study</a></li>
+    <li><a href="about.asp">Service</a></li>
+    <li><a href="default.asp">Team</a></li>
+  </ul>
+  <div class="phone-btn">
+    <img src="../../src/icons/phone.svg" alt="" />
+    <p>+(888) 452 1505</p>
+  </div>
+</div>
+<style>
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    font-family: "Lato";
+  }
+
+  .ask_experts {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: green;
+    text-decoration: dashed;
+  }
+
+  .phone-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 0.5rem;
+
+    max-height: 2rem;
+  }
+
+  .phone-btn img {
+    margin-right: 1rem;
+  }
+</style>
