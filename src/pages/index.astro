@@ -31,18 +31,33 @@ import BetterConsult from "../components/BetterConsult.astro";
 
     <main>
       <AboutHero />
-
-      <OurVision />
-
-      <CoreValues />
-
-      <OurHistory />
-
-      <OurTeam />
-
-      <BetterConsult />
+      <div class="main-content">
+        <div class="background-white">
+        <OurVision />
+</div>
+        <CoreValues />
+<div class="background-white">
+        <OurHistory />
+</div>
+        <OurTeam />
+        <div class="background-white">
+          <BetterConsult />
+        </div>
+      </div>
     </main>
 
     <footer><Footer /></footer>
   </body>
 </html>
+
+<style>
+  main {
+    background-color: #f5f5f5;
+  }
+ 
+
+ 
+  .background-white {
+    background-color: #FFF;
+  }
+</style>

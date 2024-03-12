@@ -8,10 +8,8 @@
   --pill-style: "font-size: 1rem; font-weight: 600; color: var(--color-primary); margin-top: 0; margin-bottom: 0; background-color: #FFCC4A; border-radius: 20px; max-width: fit-content; padding: 0.1rem 0.6rem; margin: 1rem 0;";
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr minmax(1fr var(--content-width) 1fr);
-}
+
+
 
 article {
   background: red;
@@ -20,5 +18,3 @@ article {
 h1 {
   font-family: "Lato";
 }
-
-

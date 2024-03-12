@@ -1,6 +1,6 @@
 ---
 import Pill from "../components/Pill.astro";
-import BigText from "../components/Pill.astro";
+import BigText from "../components/BigText.astro";
 ---
 
 <section>
@@ -20,9 +20,23 @@ import BigText from "../components/Pill.astro";
 
 <style>
 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 20rem;
+    padding: 5rem;
+  }
+
 .better-website {
     width: 100%;
     border-radius: var(--border-radius-med);
+}
+
+img {
+  max-width: clamp(50rem, 2vw, 80rem);
+  
 }
 
 </style>

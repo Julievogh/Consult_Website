@@ -2,18 +2,13 @@
 const { number, title } = Astro.props;
 ---
 
-
-
-  <div class="sub-txt">
-    <p class="number">{number}</p>
-    <p class="small-text">{title}</p>
-  </div>
-
+<div class="sub-txt">
+  <p class="number">{number}</p>
+  <p class="small-text">{title}</p>
+</div>
 
 <style>
-
-    
- .sub-txt {
+  .sub-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +17,7 @@ const { number, title } = Astro.props;
   }
 
   .sub-txt .number {
-font-size: clamp(1.4rem, 2.5vw, 3.2rem);
+    font-size: clamp(1.4rem, 2.5vw, 3.2rem);
+    font-weight: 600;
   }
 </style>

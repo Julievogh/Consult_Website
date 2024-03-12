@@ -4,24 +4,26 @@ import BigText from "../components/BigText.astro";
 import SubText from "../components/SubText.astro";
 ---
 
-
 <section class="our-vision">
   <div class="txt-container">
-    <Pill title="Services" color="green" />
-    <BigText text="Turn your ideas into reality"/>
+    <Pill title="Our vision" color="green" />
+    <BigText text="Turn your ideas into reality" />
     <p class="undertext">
-      Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide
-      with additional from DevOps.
+      Capitalize on low hanging fruit to identify a ballpark value added
+      activity beta test. Override the digital divide with additional from
+      DevOps.
     </p>
 
     <div class="check_txt">
       <img src="../../src/icons/check.svg" alt="" /><p>
-        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day.
+        Bring to the table win-win survival strategies to ensure proactive
+        domination. At the end of the day.
       </p>
     </div>
     <div class="check_txt">
       <img src="../../src/icons/check.svg" alt="" /><p>
-        Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the digital.
+        Capitalize on low hanging fruit to identify a ballpark value added
+        activity to beta test override the digital.
       </p>
     </div>
   </div>
@@ -33,27 +35,29 @@ import SubText from "../components/SubText.astro";
 </section>
 
 <div class="sub-txt-container">
-<SubText number="1128+" title="Successful Work" />
-<SubText number="908+" title="Team member" />
-<SubText number="258+" title="Happy Customers" />
-<SubText number="564+" title="Creative Idea" />
+  <SubText number="1128+" title="Successful Work" />
+  <SubText number="908+" title="Team member" />
+  <SubText number="258+" title="Happy Customers" />
+  <SubText number="564+" title="Creative Idea" />
 </div>
 
 <style>
-  h2, p {
+  h2,
+  p {
     font-family: "Lato";
   }
   .our-vision {
     font-family: "Lato";
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    background-color: #fff;
     width: 100%;
-    padding: 2rem;
 
     border-radius: 20px;
     margin-bottom: 2rem;
     text-align: left;
+    margin: 2rem 20rem;
+    padding: 2rem;
   }
 
   .txt-container {
@@ -65,13 +69,18 @@ import SubText from "../components/SubText.astro";
     padding: 1rem 2rem;
   }
 
+  .check_txt {
+    display: flex;
+    gap: 1.3rem;
+  }
+
   .img-container img {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
 
     border-radius: 10px;
   }
- .sub-txt-container {
+  .sub-txt-container {
     font-family: "Lato";
     display: flex;
     flex-direction: row;
@@ -79,7 +88,4 @@ import SubText from "../components/SubText.astro";
     text-align: left;
     border-radius: var(--border-radius-hero);
   }
-
-  
-  
 </style>
