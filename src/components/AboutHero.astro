@@ -1,5 +1,6 @@
 ---
 import styles from "../../styles/global.css";
+import Pill from "../components/Pill.astro"
 ---
 
 
@@ -8,7 +9,7 @@ import styles from "../../styles/global.css";
   <div class="hero-bg-img">
     <div class="hero-info-container">
       <div class="content-wrapper">
-        <h2>Services</h2>
+        <Pill title="Services" color="yellow" />
         <p>Creative Services For Boost Your Business Growth</p>
       </div>
     </div>
@@ -44,16 +45,7 @@ import styles from "../../styles/global.css";
   /* Put in var pill */
 
   h2 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #FFCC4A;;
-    border-radius: 20px;
-    max-width: fit-content;
-    padding: 0.1rem 0.6rem;
-    margin: 1rem 0;
+    
   }
   p {
     font-size: 2rem;

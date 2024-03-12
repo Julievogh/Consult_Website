@@ -1,0 +1,37 @@
+---
+const { title, img } = Astro.props;
+---
+
+<div class="card_container">
+  <img class="firstimg" src={img} alt="" />
+  <h3>{title}</h3>
+  <p>
+    Leverage agile frameworks to provide a robust synopsis for high level
+    overviews.
+  </p>
+  <!-- <Pill /> -->
+  <div class="icons">
+    <img src="../../src/icons/instagram.svg" alt="" />
+    <img src="../../src/icons/facebook.svg" alt="" />
+    <img src="../../src/icons/twitter.svg" alt="" />
+  </div>
+</div>
+
+<style>
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+
+  .icons {
+    display: flex;
+
+    gap: 1rem;
+  }
+
+.firstimg {
+  border-radius: var(--border-radius-med);
+</style>

@@ -1,7 +1,14 @@
+---
+import Pill from "../components/Pill.astro";
+import BigText from "../components/BigText.astro";
+import SubText from "../components/SubText.astro";
+---
+
+
 <section class="our-vision">
   <div class="txt-container">
-    <h2 class="pill">Our vision</h2>
-    <p class="big-txt">Turn your ideas into reality.</p>
+    <Pill title="Services" color="green" />
+    <BigText text="Turn your ideas into reality"/>
     <p class="undertext">
       Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide
       with additional from DevOps.
@@ -26,69 +33,18 @@
 </section>
 
 <div class="sub-txt-container">
-  <div class="sub-txt">
-    <p class="number">1128+</p>
-    <p class="small-text">Successful Work</p>
-  </div>
-
-  <div class="sub-txt">
-    <p class="number">1128+</p>
-    <p class="small-text">Successful Work</p>
-  </div>
-
-  <div class="sub-txt">
-    <p class="number">1128+</p>
-    <p class="small-text">Successful Work</p>
-  </div>
-
-  <div class="sub-txt">
-    <p class="number">1128+</p>
-    <p class="small-text">Successful Work</p>
-  </div>
+<SubText number="1128+" title="Successful Work" />
+<SubText number="908+" title="Team member" />
+<SubText number="258+" title="Happy Customers" />
+<SubText number="564+" title="Creative Idea" />
 </div>
 
-<section class="core_values">
-  <div class="core-txt-container">
-    <h2 class="pill">GROWING WITH OUR CLIENTS</h2>
-    <p class="sub-txt">Our core values & principles</p>
-    <p class="undertext">
-      Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide
-      with additional from DevOps.
-    </p>
-  </div>
-  <div class="core-big-container">
-    <div class="core-container">
-      <img src="" alt="" class="black-logo" />
-      <p class="bold-txt">Creative Ideas</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
-      <div class="read-more-container"><p class="readmore">Read More</p><img src="" alt="" class="arrow-logo" /></div>
-    </div>
-
-    <div class="core-container">
-      <img src="" alt="" class="black-logo" />
-      <p class="bold-txt">Creative Ideas</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
-      <div class="read-more-container"><p class="readmore">Read More</p><img src="" alt="" class="arrow-logo" /></div>
-    </div>
-
-    <div class="core-container">
-      <img src="" alt="" class="black-logo" />
-      <p class="bold-txt">Creative Ideas</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
-      <div class="read-more-container"><p class="readmore">Read More</p><img src="" alt="" class="arrow-logo" /></div>
-    </div>
-
-    <div class="core-container">
-      <img src="" alt="" class="black-logo" />
-      <p class="bold-txt">Creative Ideas</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
-      <div class="read-more-container"><p class="readmore">Read More</p><img src="" alt="" class="arrow-logo" /></div>
-    </div>
-  </div>
-</section>
-
 <style>
+  h2, p {
+    font-family: "Lato";
+  }
   .our-vision {
+    font-family: "Lato";
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -101,6 +57,7 @@
   }
 
   .txt-container {
+    font-family: "Lato";
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     justify-self: center;
@@ -114,8 +71,8 @@
 
     border-radius: 10px;
   }
-
-  .sub-txt-container {
+ .sub-txt-container {
+    font-family: "Lato";
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +80,6 @@
     border-radius: var(--border-radius-hero);
   }
 
-  .sub-txt-container .sub-txt {
-    margin: 2rem 4rem;
-  }
+  
+  
 </style>

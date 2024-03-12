@@ -1,0 +1,46 @@
+---
+import Pill from "../components/Pill.astro";
+import BigText from "../components/BigText.astro";
+---
+
+<section>
+  <div class="background-container">
+    <Pill title="Our history" color="green" />
+
+    <BigText text="Better Consult, Better Results" />
+    <p>
+      Our software development agency has a growth up to 30% per each year. If
+      you are result-oriented, not afraid to take initiative – drop us a note
+      and join our team!
+    </p>
+    <button><img src="../../src/icons/phone.svg" alt="" />+800 1234 654</button>
+  </div>
+
+  <div class="img_container">
+    <img src="../../src/imgs/img1.png" alt="" />
+    <img src="../../src/imgs/img2.png" alt="" />
+  </div>
+</section>
+
+<style>
+  section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181818;
+    margin: 4rem;
+    border-radius: var(--border-radius-med);
+  }
+  .background-container {
+    
+    color: white;
+  padding: 4rem;
+  }
+
+  button {
+    background: #FFCC4A;
+    border: none;
+    border-radius: var(--border-radius-med);
+    padding: 0.5rem;
+  }
+</style>

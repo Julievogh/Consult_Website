@@ -1,0 +1,78 @@
+---
+import Card from "../components/Card.astro";
+import Base from "../layouts/Base.astro";
+import Columns from "../components/Columns.astro";
+import BigText from "../components/BigText.astro";
+
+import Pill from "../components/Pill.astro"
+---
+<Base>
+    <section class="container">
+        <div class="upper_div">
+            <div>
+  <Pill title="growing with our clients" color="yellow" />
+  <BigText text="Our core values & principles"/>
+  <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+  </div>
+  <div class="button_container">
+  <button>Get in touch</button>
+  </div>
+  </div>
+  <div>
+    <Columns cols="4">
+      <Card title="Creative Ideas" variant="secondary" img="../../src/icons/creativeideas.svg" />
+      <Card title="So cool" variant="secondary" img="../../src/icons/bestfeat.svg" />
+      <Card title="Inspiration" variant="secondary" img="../../src/icons/earth.svg" />
+      <Card title="Easy solutions" variant="secondary" img="../../src/icons/things.svg" />
+    </Columns>
+</div>
+  </section>
+</Base>
+
+
+<style>
+   .container{
+    background: #F5F5F5;
+
+  }
+
+.upper_div {
+    display: flex;
+    flex-direction: row
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background: #181818;
+    color: #F5F5F5;
+    height: clamp(1rem, 20px, 3rem);
+    border-radius: var(--border-radius-hero);
+    padding: 1rem;
+    justify-self: flex-end;
+    
+}
+
+ .button_container {
+    align-self: flex-end;
+  }
+
+  h2 {
+    /* Apply the pill-style */
+    var(--pill-style);
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .grid-container > * {
+    grid-column: content;
+  }
+
+  .full-size {
+    grid-column: full;
+  }
+</style>
+

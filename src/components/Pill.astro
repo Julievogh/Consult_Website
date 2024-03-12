@@ -1,0 +1,42 @@
+---
+const { title, color } = Astro.props;
+---
+<div data-variant = {color}>
+<h2>{title}</h2>
+</div>
+
+
+<style>
+
+    h2 {
+font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+
+[data-variant="green"]{
+  
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #4EAF4E;
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 0.1rem 0.6rem;
+    margin: 1rem 0;
+}
+
+[data-variant="yellow"]{
+ 
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #FFCC4A;
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 0.1rem 0.6rem;
+    margin: 1rem 0;
+}
+
+
+</style>

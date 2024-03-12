@@ -1,21 +1,39 @@
 ---
-
-
+const { title, variant, img } = Astro.props;
 ---
 
-
-
-<article>
-    <h2>Article Title</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <footer><p>Bla bla bla</p></footer>
+<article data-variant={variant}>
+    <img src={img} alt="icon">
+  <h3>{title}</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </p>
+  <a href="#">Read more</a><img src="../../src/icons/arrowright.svg" alt="arrow right">
 </article>
 
-
 <style>
-    article {
-        background: blue;
-        border: 1px solid #ddd;
-        padding: 1rem;
-    }
+  article {
+    font-family: "Lato";
+    background: rgb(255, 255, 255);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-small);
+    
+  }
+
+ 
+
+  [data-variant="primary"] {
+    background: rgb(255, 255, 255);
+    color: aliceblue;
+  }
+
+  /*
+  [data-variant="secondary"] {
+    background: pink;
+    color: black;
+  }
+  */
 </style>

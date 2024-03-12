@@ -1,0 +1,28 @@
+---
+import Pill from "../components/Pill.astro";
+import BigText from "../components/BigText.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+---
+
+<section>
+  <Pill title="Our history" color="yellow" />
+
+  <BigText text="We champion the bold to achieve the extraordinary" />
+  <p>
+    Ippsum is the result of synergy between our teams and our customers. Our
+    company culture is focused on excellent productivity, customer satisfaction,
+    respect for team.
+  </p>
+<div class="profile-cards">
+  <ProfileCard title="Sarah Jasmine" img="../../src/imgs/sarah.png"/>
+  <ProfileCard title="John Carter" img="../../src/imgs/john.png"/>
+  <ProfileCard title="Daisy Stella" img="../../src/imgs/daisy.png"/>
+  </div>
+</section>
+
+
+<style>
+    .profile-cards {
+    display: flex;
+    }
+</style>

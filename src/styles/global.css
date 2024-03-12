@@ -1,8 +1,11 @@
 :root {
-  --content-width: 75rem;
+  --content-width: 70rem;
   --color-text: red;
   --border-radius-hero: 40px;
+  --border-radius-small: 10px;
+  --border-radius-med: 20px;
   font-family: "Lato";
+  --pill-style: "font-size: 1rem; font-weight: 600; color: var(--color-primary); margin-top: 0; margin-bottom: 0; background-color: #FFCC4A; border-radius: 20px; max-width: fit-content; padding: 0.1rem 0.6rem; margin: 1rem 0;";
 }
 
 main {
@@ -18,7 +21,4 @@ h1 {
   font-family: "Lato";
 }
 
-h2 {
-  font-size: 2rem;
-  font-color: blue;
-}
+
