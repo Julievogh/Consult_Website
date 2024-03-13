@@ -5,7 +5,7 @@ import ProfileCard from "../components/ProfileCard.astro";
 ---
 
 <section>
-  <Pill title="Our history" color="yellow" />
+  <Pill title="Our team" color="yellow" />
 
   <BigText text="We champion the bold to achieve the extraordinary" />
   <p>
@@ -13,16 +13,34 @@ import ProfileCard from "../components/ProfileCard.astro";
     company culture is focused on excellent productivity, customer satisfaction,
     respect for team.
   </p>
-<div class="profile-cards">
-  <ProfileCard title="Sarah Jasmine" img="../../src/imgs/sarah.png"/>
-  <ProfileCard title="John Carter" img="../../src/imgs/john.png"/>
-  <ProfileCard title="Daisy Stella" img="../../src/imgs/daisy.png"/>
+  <div class="profile-cards">
+    <ProfileCard title="Sarah Jasmine" img="../../src/imgs/sarah.png" />
+    <ProfileCard title="John Carter" img="../../src/imgs/john.png" />
+    <ProfileCard title="Daisy Stella" img="../../src/imgs/daisy.png" />
   </div>
 </section>
 
-
 <style>
-    .profile-cards {
+  section {
     display: flex;
+    flex-direction: column;
+    margin: 0rem 20rem;
+  }
+  .profile-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .profile-cards {
+      flex-direction: column;
     }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 42rem;
+    }
+  }
 </style>

@@ -2,9 +2,10 @@
 import Pill from "../components/Pill.astro";
 import BigText from "../components/BigText.astro";
 import SubText from "../components/SubText.astro";
+import ImgPattern1 from "../components/ImgPattern1.astro";
 ---
-
-<section class="our-vision">
+<section>
+<div class="our-vision">
   <div class="txt-container">
     <Pill title="Our vision" color="green" />
     <BigText text="Turn your ideas into reality" />
@@ -29,9 +30,10 @@ import SubText from "../components/SubText.astro";
   </div>
 
   <div class="img-container">
-    <!--<img src="../../src/imgs/pattern.svg" alt=""> -->
-    <img src="../../src/imgs/threepeople.png" alt="" />
+    <ImgPattern1 />
+    <img src="" alt="" />
   </div>
+</div>
 </section>
 
 <div class="sub-txt-container">
@@ -42,31 +44,46 @@ import SubText from "../components/SubText.astro";
 </div>
 
 <style>
-  h2,
+section {
+  margin: 0rem 8rem;
+}
+
+  
   p {
     font-family: "Lato";
+    
   }
   .our-vision {
+    max-width: fit-content;
     font-family: "Lato";
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: #fff;
-    width: 100%;
-
+    width: 80%;
     border-radius: 20px;
     margin-bottom: 2rem;
     text-align: left;
-    margin: 2rem 20rem;
-    padding: 2rem;
+    margin: 0rem 10rem;
+    padding: clamp(1rem, 2vw,6rem);
   }
 
   .txt-container {
+    max-width: fit-content;
     font-family: "Lato";
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
     justify-self: center;
-
     padding: 1rem 2rem;
+    margin: 0rem 4rem;
+  }
+
+  .img-container {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
   }
 
   .check_txt {
@@ -74,12 +91,6 @@ import SubText from "../components/SubText.astro";
     gap: 1.3rem;
   }
 
-  .img-container img {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
-
-    border-radius: 10px;
-  }
   .sub-txt-container {
     font-family: "Lato";
     display: flex;
@@ -87,5 +98,23 @@ import SubText from "../components/SubText.astro";
     justify-content: center;
     text-align: left;
     border-radius: var(--border-radius-hero);
+  }
+
+  @media (max-width: 768px) {
+    .our-vision {
+      grid-template-columns: 1fr; 
+    }
+
+    .txt-container {
+      grid-column: 1; 
+      grid-row: 1; 
+      margin: 0 20rem;
+    }
+
+    .img-container {
+      grid-column: 1; 
+      grid-row: 2; 
+      margin-top: 2rem; 
+    }
   }
 </style>

@@ -1,9 +1,12 @@
 ---
 import Pill from "../components/Pill.astro";
 import BigText from "../components/BigText.astro";
+import ImgPattern2 from "../components/ImgPattern2.astro"
 ---
 
 <section>
+
+  <p></p>
   <Pill title="Our history" color="green" />
 
   <BigText text="Better Website Means A User Experience" />
@@ -12,13 +15,23 @@ import BigText from "../components/BigText.astro";
     company culture is focused on excellent productivity, customer satisfaction,
     respect for team and individual achievements.
   </p>
+ <ImgPattern2 />
 
-  <img class="better-website" src="../../src/imgs/betterwebsite.png" alt="" />
-  <img src="../imgs/greenbox.png" />
+  
 </section>
 
-
 <style>
+
+
+
+  @layer {
+    body {
+      min-height: 100svh;
+      font-family: system-ui, sans-serif;
+      display: grid;
+      place-content: center;
+    }
+  }
 
   section {
     display: flex;
@@ -29,14 +42,10 @@ import BigText from "../components/BigText.astro";
     padding: 5rem;
   }
 
-.better-website {
+  .better-website {
     width: 100%;
     border-radius: var(--border-radius-med);
-}
+  }
 
-img {
-  max-width: clamp(50rem, 2vw, 80rem);
-  
-}
-
+ 
 </style>

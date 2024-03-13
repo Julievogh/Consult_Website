@@ -1,9 +1,7 @@
 ---
 import styles from "../../styles/global.css";
-import Pill from "../components/Pill.astro"
+import Pill from "../components/Pill.astro";
 ---
-
-
 
 <div class="hero">
   <div class="hero-bg-img">
@@ -33,6 +31,8 @@ import Pill from "../components/Pill.astro"
     background-color: rgba(255, 255, 255, 0.7);
     padding: 1rem 2rem;
     border-radius: 20px;
+    
+    width: 80%;
   }
 
   .hero-bg-img {
@@ -45,7 +45,6 @@ import Pill from "../components/Pill.astro"
   /* Put in var pill */
 
   h2 {
-    
   }
   p {
     font-size: 2rem;
@@ -53,5 +52,13 @@ import Pill from "../components/Pill.astro"
     color: var(--color-primary);
     margin-top: 0;
     margin-bottom: 0.6rem;
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+     
+      width: 50%;
+      margin: 0 auto; 
+    }
   }
 </style>

@@ -13,11 +13,15 @@ const { number, title } = Astro.props;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: clamp(1rem, 3vw, 4rem);
+    margin: clamp(0.2rem, 1vw, 4rem);
   }
 
   .sub-txt .number {
     font-size: clamp(1.4rem, 2.5vw, 3.2rem);
     font-weight: 600;
+  }
+
+  .small-text {
+    font-size: clamp(0.8rem, 1.2vw, 3.2rem);
   }
 </style>
