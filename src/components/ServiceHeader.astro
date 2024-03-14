@@ -1,0 +1,23 @@
+---
+import Pill from "../components/Pill.astro";
+import BigText from "../components/BigText.astro";
+---
+
+<section class="service_container">
+  <div class="service-box">
+    <Pill title="Services" color="yellow" />
+    <BigText text="Service Details" />
+  </div>
+
+  <style>
+    .service_container {
+      background-image: url("src/imgs/servicedet.png");
+     
+    }
+
+    .service-box {
+      background-color: aliceblue;
+      max-width: clamp(2rem, 8vw, 20rem);
+    }
+  </style>
+</section>
