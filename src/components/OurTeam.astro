@@ -2,6 +2,8 @@
 import Pill from "../components/Pill.astro";
 import BigText from "../components/BigText.astro";
 import ProfileCard from "../components/ProfileCard.astro";
+import { Image } from "astro:assets";
+import SarahImg from "../../src/imgs/sarah.png";
 ---
 
 <section>
@@ -14,7 +16,9 @@ import ProfileCard from "../components/ProfileCard.astro";
     respect for team.
   </p>
   <div class="profile-cards">
-    <ProfileCard title="Sarah Jasmine" img="src/imgs/sarah.png" />
+    <ProfileCard title="Sarah Jasmine" Image src="{SarahImg}" />
+
+    <Image src={SarahImg} alt="Sarah"/>
     <ProfileCard title="John Carter" img="/john.png" />
     <ProfileCard title="Daisy Stella" img="/imgs/daisy.png" />
   </div>
