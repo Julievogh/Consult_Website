@@ -1,9 +1,11 @@
 ---
-const { img } = Astro.props;
+const { title, imgSrc } = Astro.props;
+import { Image } from "astro:assets";
+import BetterImg from "../../src/imgs/betterwebsite.png";
 ---
 
 <figure>
-  <img class="img" src="/src/imgs/betterwebsite.png" />
+  <Image class="img_better" src={BetterImg} alt="better img" />
 </figure>
 
 <style>
@@ -40,7 +42,7 @@ const { img } = Astro.props;
     }
   }
 
-   img {
+  img {
     max-width: clamp(50rem, 2vw, 80rem);
   }
 </style>
