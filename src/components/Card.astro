@@ -1,6 +1,7 @@
 ---
 const { title, variant, imgSrc } = Astro.props;
 import { Image } from "astro:assets";
+import Arrow from "../../src/icons/arrowright.svg";
 ---
 
 <article data-variant={variant}>
@@ -11,10 +12,7 @@ import { Image } from "astro:assets";
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   </p>
-  <a href="#">Read more</a><img
-    src="../../src/icons/arrowright.svg"
-    alt="arrow right"
-  />
+  <a href="#">Read more</a><Image src={Arrow} alt="arrow right" />
 </article>
 
 <style>
