@@ -1,7 +1,12 @@
 ---
 import Pill from "../components/Pill.astro";
 import BigText from "../components/BigText.astro";
+
+import { Image } from "astro:assets";
+import Img1 from "../../src/imgs/img1.png";
+import Img2 from "../../src/imgs/img2.png";
 ---
+
 
 <section>
   <div class="background-container">
@@ -17,8 +22,8 @@ import BigText from "../components/BigText.astro";
   </div>
 
   <div class="img_container">
-    <img src="../../src/imgs/img1.png" alt="" />
-    <img src="../../src/imgs/img2.png" alt="" />
+    <Image src={Img1} alt="img" />
+    <Image src={Img2} alt="img" />
   </div>
 </section>
 
@@ -66,8 +71,8 @@ import BigText from "../components/BigText.astro";
     }
 
     .img_container img {
-      max-width: 80%; 
-      margin: 2rem; 
+      max-width: 80%;
+      margin: 2rem;
     }
   }
 </style>
