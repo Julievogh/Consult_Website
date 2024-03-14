@@ -1,9 +1,11 @@
 ---
-const { img } = Astro.props;
+const { title, imgSrc } = Astro.props;
+import { Image } from "astro:assets";
+import BetterImg from "../../src/imgs/threepeople.png";
 ---
 
 <figure>
-  <img class="img" src="../../src/imgs/threepeople.png" />
+  <Image class="img_better" src={BetterImg} alt="three people img" />
 </figure>
 
 <style>
