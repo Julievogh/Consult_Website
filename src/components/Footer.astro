@@ -41,14 +41,24 @@
 </div>
 <style>
   .footer-container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    max-width: 100%;
+    padding: 0 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in the width */
     background: rgba(24, 24, 24, 0.9);
     color: white;
     backdrop-filter: blur(21.5px);
     font-family: "Lato";
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 20px;
   }
 
   .line {
@@ -58,12 +68,6 @@
     background-color: #ffcc4a;
     margin: 0 auto;
     align-self: left;
-  }
-  .footer-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-left: 20px;
   }
 
   .footer-title {
@@ -76,5 +80,23 @@
   .footer-title-address {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 20px;
+      
+    }
+
+    .footer-menu {
+      margin-left: 0;
+      padding: 20px;
+    }
+
+    .footer-title {
+      margin: 10px 0;
+    }
   }
 </style>
