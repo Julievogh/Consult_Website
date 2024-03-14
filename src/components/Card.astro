@@ -1,16 +1,20 @@
 ---
-const { title, variant, img } = Astro.props;
+const { title, variant, imgSrc } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <article data-variant={variant}>
-    <img src={img} alt="icon">
+  <Image src={imgSrc} alt={title} />
   <h3>{title}</h3>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   </p>
-  <a href="#">Read more</a><img src="../../src/icons/arrowright.svg" alt="arrow right">
+  <a href="#">Read more</a><img
+    src="../../src/icons/arrowright.svg"
+    alt="arrow right"
+  />
 </article>
 
 <style>
@@ -20,10 +24,7 @@ const { title, variant, img } = Astro.props;
     margin: 1rem;
     padding: 1rem;
     border-radius: var(--border-radius-small);
-    
   }
-
- 
 
   [data-variant="primary"] {
     background: rgb(255, 255, 255);
